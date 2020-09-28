@@ -647,8 +647,8 @@ class Authentication
     protected static function parseEdgeRcFile($path)
     {
         if ($path === null) {
-            if (isset($_SERVER['HOME']) && file_exists($_SERVER['HOME'] . '/.edgerc')) {
-                $path = $_SERVER['HOME'] . '/.edgerc';
+            if (isset($_SERVER['DOCUMENT_ROOT']) && file_exists($_SERVER['DOCUMENT_ROOT'] . '/.edgerc')) {
+                $path = $_SERVER['DOCUMENT_ROOT'] . '/.edgerc';
             } elseif (file_exists('./.edgerc')) {
                 $path = './.edgerc';
             }

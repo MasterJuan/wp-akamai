@@ -319,7 +319,7 @@ class AuthenticationTest extends \PHPUnit_Framework_TestCase
      */
     public function testCreateFromEdgeRcDefault($section, $file)
     {
-        $_SERVER['HOME'] = __DIR__ . '/edgerc';
+        $_SERVER['DOCUMENT_ROOT'] = __DIR__ . '/edgerc';
         $authentication = \Akamai\Open\EdgeGrid\Authentication::createFromEdgeRcFile($section, $file);
 
         $this->assertInstanceOf('\Akamai\Open\EdgeGrid\Authentication', $authentication);
@@ -344,7 +344,7 @@ class AuthenticationTest extends \PHPUnit_Framework_TestCase
      */
     public function testCreateFromEdgeRcUseCwd()
     {
-        $_SERVER['HOME'] = '/non-existant';
+        $_SERVER['DOCUMENT_ROOT'] = '/non-existant';
         $unlink = false;
         if (!file_exists('./.edgerc')) {
             touch('./.edgerc');
