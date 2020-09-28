@@ -11,7 +11,7 @@
  * @link              https://developer.akamai.com
  * @since             0.2.0
  * @package           Akamai
- * @author            Davey Shafik <dshafik@akamai.com>
+ * @author            Davey Shafik <dshafik@akamai.com> & Antonios Krinis <antonioskrinis@gmail.com>
  *
  * @wordpress-plugin
  * Plugin Name:       Akamai for WordPress
