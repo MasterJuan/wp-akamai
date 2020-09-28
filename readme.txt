@@ -52,6 +52,10 @@ In addition, there is a strictly enforced 50,000 byte limit on the size of each 
 
 == Changelog ==
 
+= 0.7 =
+
+* Fix Server's path in order to point to the right folder for .edgerc
+
 = 0.6 =
 
 * Fix fatal errors when no .edgerc exists or is not found
