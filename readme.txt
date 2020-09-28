@@ -1,5 +1,5 @@
 === Akamai for WordPress ===
-Contributors: dshafik
+Contributors: dshafik, MasterJuan
 Tags: akamai, cache, purge, cdn
 Requires at least: 4.3
 Tested up to: 5.5.1
